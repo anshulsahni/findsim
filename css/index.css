@@ -1,40 +1,114 @@
 *{padding: 0px; margin:0px; font-family: "calibri";}
 body{overflow-y: hidden;}
 #wrapper{position: relative; min-height: 500px; width:1000px; border:1px solid #000; box-shadow: 0px 0px 10px #333; margin:0px auto; background-color: #fff; border-radius: 0px 0px 10px 10px; top:0px; overflow: hidden;} 
-#container{position: relative; width:100%; height:500px;  background-color: #ccc; overflow-y: auto}
+#container{position: relative; width:100%; height:500px;  background-color: #fff; overflow-y: auto}
 #navigation_container{position: relative; top:20px; width:100%; height:40px;}
 #navigation_container>div{display: table; margin:0px auto;}
 #navigation_container>div ul{display: inline; list-style-type: none;}
-#navigation_container>div ul li{display: inline; list-style-type: none; padding: 5px 30px; cursor: default; border-radius: 10px; color:#fff;}
-.non_active_menu{background-color: green;  border: 1px solid #000;}
-.active_menu{background-color: #CC0033; border: 1px solid #000; box-shadow: 0px 0px 5px #000;}
+#navigation_container>div ul li{display: inline; list-style-type: none; padding: 6px 30px; cursor: default; border-radius: 5px;}
+.non_active_menu{background-color: #CCCCCC;  border: 1px solid #000; color:#000;}
+.active_menu{background-color: #CC0033; border: 1px solid #000; box-shadow: 0px 0px 5px #000; color:#fff;}
 
 #content_container{height:auto; width:90%; margin:0px auto; top:10px; position: relative; padding-bottom: 70px; display: table;}
 .steps{height:100%;}
 .steps>div:first-of-type{position: relative; display: table; margin: 0px auto;}
-select{height:30px; width:300px; font-size: 18px;}
-.msg{font-size: 20px; font-weight: 900; color:#0000ff;}
+input[type='text'],select{height:30px; width:300px; font-size: 18px; border-radius: 5px; border: 1px solid #999; box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);}
+.msg{font-size: 20px; font-weight: 900; color:#CC0033;}
+
+/*navigation bar styling*/
 .navigation_bar>div{display: table;}
-.navigation_buttons{height:25px; width:200px; background-color: #2C3747; color:#fff; border-style: none;}
+.navigation_buttons{height:30px; width:200px; background-color: #CC0033; color:#fff; border-style: none; border-radius: 10px; cursor: pointer; font-size: 18px;}
 .navigation_buttons:focus{border:2px solid #000; box-shadow: 0px 0px 10px #000;}
-
 .step_navigation_bar{position: relative; margin:0px;}
-#step1_navigation_bar{top:100px;}
-#step2_navigation_bar{top:50px;}
-#step3_navigation_bar{top:50px;}
+#step1_navigation_bar{top:120px;}
+#step2_navigation_bar{top:60px;}
+#step3_navigation_bar{top:60px;}
 #step4_navigation_bar{top:30px;}
-
+#step5_navigation_bar{top:50px;}
+.comment_counts{float:right; margin-right: 10px; text-align: center; cursor: pointer; margin-top: 5px}
+.comment_counts_1{border:1px solid #CC0000; border-radius: 2px 1px 1px 1px; padding:0px 4px;}
+.comment_counts_2{background-color: #c00; color:#fff; padding: 0px 4px; border-radius: 5px;}
 
 .test{padding: 10px; background-color: #000; text-align: center; display: inline-block;}
 
+/*step1 styling*/
+#step1_table tr td{padding:10px 0px;}
+
 /*step2 styling*/
-.option_wrapper{border:1px solid #2c3747; width:200px; margin-top: 5px;}
-.box_wrapper{display:inline-block; padding:15px; background-color: #2c3747;}
+.box_wrapper{display:inline-block; padding:17px; background-color: #666;}
+.option_wrapper{border:1px solid #2c3747; width:610px; margin-top: 5px;}
 .option_wrapper input[type='checkbox']{height:20px; width:20px;} 
 .network_name{font-size: 25px;}
-.step4_network_name{font-size: 30px; font-weight: 900; color:#042b64;}
-.step4_category_name{font-size: 20px; font-style: italic;font-weight: 500; color:#042B64;}
+.selected_counts{float: right; margin-right: 10px; text-align: center; margin-top: 5px;}
+.selected_counts_1{border:1px solid #CC0000; border-radius: 2px 1px 1px 1px; padding:0px 4px;}
+.selected_counts_2{background-color: #c00; color:#fff; padding: 0px 4px; border-radius: 5px;}
+.icon_img{height:50px; width:75px; margin-top: 2px; margin-right: 186px; float:right;}
+.icon_img>img{height:50px; width:75px; }
+
+/*step2 rating*/
+.step2_rating_band_wrapper{width:100px; height:20px; float:right; margin-right:30px; margin-top: 15px; }
+.step2_rating_container img{height:20px; width:20px;}
+
+/*step4 styling*/
+.step4_network_name{font-size: 30px; font-weight: 900; color:#cc0033;}
+.step4_category_name{font-size: 20px; font-style: italic;font-weight: 500; color:#D54E70;}
 .step4_table{border-collapse: collapse; width:800px; text-align: center;}
-.step4_table tr th{background-color:#042B64; color:#fff; border-color:#fff;}
+.step4_table tr th{background-color:#c00; color:#fff; border-color:#fff;}
 .no_plan_available{font-size: 14px; font-style: italic; color:#888;}
 .postpre{font-weight:700; font-size: 18px; text-align: left; }
+#reset{color:#000; text-decoration: underline; font-size: 15px; cursor: pointer; font-style: italic;}
+.icon_img_step4{height:50px; width:75px; margin-top: -3px;}
+.icon_img_step4>img{height:50px; width:75px; }
+
+/*step5 styling*/
+#step5_ul{list-style-type: none; display: table; width:800px;}
+#step5_ul li{list-style-type: none; display: inline-table; border: 1px solid #2c3747; height:200px; width:150px; margin:10px 40px;}
+.step5_network_name{font-weight: 800; color:#fff; font-size: 22px; background-color:#cc0033;} 
+.step5_network_name>input[type='radio']{height:20px; width:20px; margin:2px 0px;}
+.step5_category_name{font-weight:700; margin-left: 2px;}
+.step5_amt{margin-left: 5px; font-size:14px; float:right; margin-right:10px;}
+.step5_total_band{background-color: #cc0033; color:#fff;margin-top:5px;}
+.step5_total{font-weight: 700; margin-left: 2px; }
+.step5_total_figure{font-size: 15px; float:right; margin-right: 10px;}
+.step5_network_icon{ text-align: center;}
+.step5_network_icon>img{height:50px; width:75px;}
+
+/*step6 styling*/
+#rating_band_wrapper{position: relative; width:300px; margin:10px auto; height:30px;}
+#rating_container{display: table; margin:0px auto;}
+.stars
+{
+	background: url("../imgs/unrated.png") center center / 100% 100% transparent;
+	height:50px; width:50px;
+	display: inline-block;
+}
+.stars_hover{background: url("../imgs/rated.png") center center / 100% 100% transparent; display: inline-block;}
+
+/*comments div*/
+#comments{position: absolute; height:300px; width:300px; background-color: #eee; border-radius: 10px; overflow: hidden; top:200px; left:500px; border:1px solid #000; box-shadow: 0px 0px 10px #111; display:none;}
+#comments_header{height:20px; background-color: #ccc; position: absolute; top:0px;  width:100%; padding-left:5px;}
+#cross{color:#555; font-size: 16px; float:right; margin-right: 10px; cursor: pointer;} 
+#cross:hover{color:#000;}
+#comments_container{overflow-y:auto; height:260px; width:100%; margin-top:20px;}
+#comments_footer{height:20px; background-color: #ccc; position: absolute; bottom:0px; width:100%;}
+.comment_table{width:100%;}
+.comment_comment{font-size:15px; color:#cc0033; font-weight: 900;}
+.comment_likes{font-size: 13px; color:#cc0033; float:right; margin-right: 2px;}
+.comment_email{font-size: 13px; color:#666; float:left; margin-left:2px;} 
+.no_comments_available{font-style: italic; color:#aaa; margin:0px auto;}
+
+/*step7_comments*/
+.step7_comment_table{width:400px; margin:10px auto;  background-color: #fff; border-style: solid; border-color:#aaa; border-width:1px 1px 0px 1px; border-radius: 10px 10px 0px 0px; box-shadow: 0px 0px 10px #aaa inset; border-bottom-width: 0px; padding-bottom: 0px;}
+.step7_comment_comment{float:left; font-weight: 900;}
+.step7_comment_likes{font-size:13px; color:#666;float:right;}
+.step7_comment_email{font-size: 13px; color:#666; float:left;}
+.step7_no_comments_available{font-style: italic; color:#888; margin:0px auto;}
+/*like*/
+.like_button{cursor: pointer; font-size: 14px; color:#cc0033; font-weight: 700; float: right; margin-right: 5px;} 
+.like_button:hover{text-decoration: underline;}
+
+/*comment writing styling*/
+.comment_input[type='text']{height:22px; width:200px;  border-radius: 4px; font-size: 13px; float:left; padding:2px; margin-left: 2px; background-color: #fff;}
+.comment_input[type='text']:focus{outline-style: none; box-shadow: 0px 0px 5px #555 inset; border-style: none;}
+.comment_input[type='button']{height:22px; width:65px; border-style: none; background-color:#cc0033; color:#fff; font-size: 13px; float:right; margin-right:5px; cursor: pointer; box-shadow: 0px 0px 5px #000;}
+.enter_email{height:22px; width:200px; border-style: none; background-color:#cc0033; color:#fff; font-size: 14px; cursor: pointer; box-shadow: 0px 0px 5px #000; margin:0px auto;}
