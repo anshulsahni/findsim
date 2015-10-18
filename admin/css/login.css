@@ -1,0 +1,13 @@
+*{padding: 0px; margin:0px;}
+#wrapper{position: relative; height:100%; min-height: 500px;}
+#container{position: relative; width:100%; margin:0px auto;}
+#login_container{position: relative; height:150px; width: 400px; margin: 0px auto; top:25px; background-color: #dbdbdb; border:1px solid #000; border-radius: 10px; box-shadow: 0px 0px 5px #000;}
+table {position: relative; margin: 0px auto; top:10px;}
+table tr td{text-align: center; padding: 12px 0px }
+input[type='text']{height:25px; width:200px; }
+input[type='text']:focus{border: 1px solid #000; outline-style: none; box-shadow: 0px 0px 2px #000;}
+input[type='password']{height:25px; width:200px; }
+input[type='password']:focus{border: 1px solid #000; outline-style: none; box-shadow: 0px 0px 2px #000;}
+#login_btn_wrapper{display: table; position: relative; margin:0px auto; top:30px;}
+input[type='submit']{height: 30px; width:150px; margin:0px auto; outline-style: none;  border:1px solid #000; border-radius: 5px; box-shadow: 0px 0px 5px #000;} 	
+input[type='submit']:focus{border-color: #fff;}
